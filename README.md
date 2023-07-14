@@ -1,5 +1,6 @@
-# mogi-calculator
-Allow to calculate the points in a current Competitive Mario Kart Match.
+# Mogi Calculator
+
+Allow you to calculate the points in a current Competitive Mario Kart Match.
 
 Basic set of rules :
 - You can select the lenght of teams (1 player, 2 players, ... up to 6 players per team) and so the "type of mogi" (in the MK community we say 2v2mogi instead of 2v2v2v2v2v2
