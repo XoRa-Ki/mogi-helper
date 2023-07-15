@@ -11,4 +11,4 @@ Basic set of rules :
 Current plans :
 - Doing a simple algorithm using python
 - Upgrade it so it can be a web app
-- Maybe later trying to convert it in C code (because in need to learn how to use it for my school, yeah)
+- Maybe add other functions later on
