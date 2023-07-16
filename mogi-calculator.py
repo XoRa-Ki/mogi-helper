@@ -42,14 +42,14 @@ if mtype != "FFA" :
         name = input()
         teamnames.append(name)
         teamplayers.append([])
-        teampoints.append([])
+        teampoints.append(0)
         playerpoints.append([])
 
         for k in range(playerperteam) : #attributes the players to the teams
             print(f"Name of player {k+1} :")
             p = input()
             teamplayers[j].append(p)
-            playerpoints[j].append([])
+            playerpoints[j].append(0)
         
         print("\n")
 
@@ -61,14 +61,14 @@ else :
             print(f"Name of player {j+1} :")
             p = input()
             teamplayers[j].append(p)
-            playerpoints[j].append([])
+            playerpoints[j].append(0)
         
         print("\n")
 
 if len(teamnames) != numteams : #in case this is a FFA
     for l in range(numteams) :
         teamnames.append("")
-        teampoints.append([])
+        teampoints.append(0)
 
 for m in range(len(teamnames)) : #if the team name isn't given, takes the name of the 1st player of the team
     if teamnames[m] == "" :
@@ -80,7 +80,7 @@ for n in range(len(teamnames)) :
     print("Team " + teamnames[n] + " :")
     for o in range(playerperteam) :
         print(teamplayers[n][o], end=" ")
-        print("\n")
+    print("\n")
 
 
 print("The match will start as soon as you press Enter")
@@ -90,7 +90,7 @@ input()
 #RUNNING THE MOGI
 #for each track you must gave the points that each player got
 
-for i in range(1) : #range(ntrack)
+for i in range(ntrack) :
     if i == 0 :
         print(f"Enter the placement for the {i+1}st track")
     elif i == 1 :
@@ -110,11 +110,16 @@ for i in range(1) : #range(ntrack)
         placementlist[oui] = int(placementlist[oui])
     
     for j in range(12) :
-        quotient = j//numteams #current team in the loop
-        rest = j%numteams #current player in the loop
-        teampoints[quotient] = teampoints[quotient] + points[placementlist[j]-1]
-        playerpoints[quotient][rest] += points[placementlist[j]]
+        quotient = j//playerperteam #current team in the loop
+        rest = j%playerperteam #current player in the loop
+        teampoints[quotient] += points[placementlist[j]-1]
+        playerpoints[quotient][rest] += points[placementlist[j]-1]
     
     print("Here is the current score :")
     for k in range(numteams) :
-        print("Team " + teamnames[n] + " :" + teampoints[k])
+        print("Team " + teamnames[k] + " : " + str(teampoints[k]))
+    
+    print("Press Enter to continue")
+    input()
+
+#Final score + ordered by points ?
