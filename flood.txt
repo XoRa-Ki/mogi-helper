@@ -1,0 +1,12 @@
+idea :
+- the web app will generate a link
+- the link display the scores
+- you can refresh the informations of the link (without losing the path, for X amount of time)
+
+construction :
+- home, display buttons for options
+- mogi manager , that generates a link and feed it with mogi info
+    first link where you can update info
+    seconde link where the score is displayed
+- tracks, display all tracks and tips linked to them
+- billcheats, display all bill extends
