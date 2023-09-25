@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1>
+    Set up the mogi :
+</h1>
+
+<form action="" method="post" class="initform">
+    <div class="initform">
+        <label for="ntracks">Number of tracks :</label>
+        <select name="numberoftracks" id="ntracks">
+            <option value="four">4</option>
+            <option value="eight">8</option>
+            <option value="twelve" selected>12</option>
+            <option value="four">24</option>
+        </select>
+    </div>
+
+    <div class="initform">
+        <label for="mtype">Mogi Type :</label>
+        <select name="mogitype" id="mtype">
+            <option value="ffa">FFA</option>
+            <option value="2v2" selected>2v2</option>
+            <option value="3v3">3v3</option>
+            <option value="4v4">4v4</option>
+            <option value="6v6">6v6</option>
+        </select>
+    </div>
+
+    <div class="initform">
+        <label for="a"></label>
+        <input type="number" name="a" id="a" default/>
+    </div>
+</form>
+
+{% endblock %}

@@ -20,7 +20,7 @@ def manager() :
         return "poster"
     else :
         #Display the form that ask for the informations needed to generate the link
-        return "getter"
+        return render_template('initializer.html')
 
 @app.route('/tracks')
 def tracks() :
