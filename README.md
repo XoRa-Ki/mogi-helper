@@ -9,6 +9,9 @@ Basic set of rules :
 - Display the final placings at the end of the match.
 
 Current plans :
-- Doing a simple algorithm using python
-- Upgrade it so it can be a web app
+- Web app upgrade,
+    - Creating a link generator to keep track of more than one mogi at the time
+    - Implementing a database to keep the data of all the mogi
+    - Doing the html implementation to differentiate mogi types
+    - (CSS)
 - Maybe add other functions later on

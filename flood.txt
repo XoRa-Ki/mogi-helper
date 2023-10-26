@@ -2,6 +2,7 @@ idea :
 - the web app will generate a link
 - the link display the scores
 - you can refresh the informations of the link (without losing the path, for X amount of time)
+- when mogi ended, an image is generated + link is freed
 
 construction :
 - home, display buttons for options
